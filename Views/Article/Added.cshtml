@@ -1,0 +1,26 @@
+﻿@model ASWWW_lab2_gr4_nohttps.Models.Article
+
+<h1>Dodano artykuł</h1>
+
+<div class="w3-card">
+	<header class="w3-container w3-teal">
+		<h1>@Model.Title</h1>
+	</header>
+
+	<div class="w3-container">
+		<p>@Model.Lead</p>
+		<p>@Model.Content</p>
+	</div>
+
+	<div class="w3-container">
+		<h3>Comments</h3>
+		<p>@Model.Comments</p>
+	</div>
+
+	<footer class="w3-container w3-teal">
+		<h5>
+			Data utworzenia: @Model.CreationDate.ToShortDateString()
+		</h5>
+	</footer>
+
+</div>
